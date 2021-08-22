@@ -82,7 +82,7 @@
 					"patching_rect" : [ 375.0, 165.0, 48.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 672.0, 0.0, 48.0, 20.0 ],
-					"text" : "v0.0.1",
+					"text" : "v1.0.0",
 					"textjustification" : 2
 				}
 
