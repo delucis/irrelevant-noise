@@ -9,7 +9,7 @@
 
 To install the `irrelevant-noise` package:
 
-1. Download the [__latest version__](https://github.com/delucis/irrelevant-noise/releases/latest) (click on `irrelevant-noise.zip`).
+1. Download the [__latest version__](https://github.com/delucis/irrelevant-noise/releases/latest) (click on `irrelevant-noise.tgz`).
 
 2. Unzip it to your packages directory:    
 `~/Documents/Max 7/Packages` for Max 7, or `~/Documents/Max 8/Packages` for Max 8.
