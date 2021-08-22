@@ -1,0 +1,12 @@
+{
+  "name": "irrelevant-noise",
+  "version": "1.0.0",
+  "description": "Performance patch for Chris Swithinbank’s irrelevant noise [subsection (1)(ab)(i)].",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delucis/irrelevant-noise.git"
+  },
+  "author": "Chris Swithinbank <swithinbank@gmail.com> (http://chrisswithinbank.net/)",
+  "homepage": "https://github.com/delucis/irrelevant-noise#readme"
+}
