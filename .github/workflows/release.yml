@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+jobs:
+  build-and-release:
+    name: Build & Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build
+      run: npm pack
+    - name: Test
+      run: (ls irrelevant-noise-*.tgz && echo "Build successful") || (echo "Missing build artifact" && exit 1)
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        fail_on_unmatched_files: true
+        files: irrelevant-noise-*.tgz
