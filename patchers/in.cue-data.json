@@ -35,17 +35,17 @@
     "25": {
       "in.clicker-on-off": "1"
     },
-    "26": {
+    "27": {
       "in.clicker-on-off": "0",
       "in.quiz-ctrl": ["chord 73 80 81 74 67", "start"]
     },
-    "27": {
+    "28": {
       "in.clicker-on-off": "1"
     },
-    "28": {
+    "31": {
       "player-1": "play in.29.wav"
     },
-    "29": {
+    "34": {
       "in.clicker-on-off": "0"
     },
     "99": {
