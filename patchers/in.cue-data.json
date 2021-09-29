@@ -3,7 +3,7 @@
   "author": "Chris Swithinbank",
   "description": "Performance patch for Chris Swithinbank’s irrelevant noise [subsection (1)(ab)(i)].",
   "website": "https://github.com/delucis/irrelevant-noise",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "mastervol": "0.",
   "cues": {
     "1": {
