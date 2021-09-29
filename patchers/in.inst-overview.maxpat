@@ -371,7 +371,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 15.0, 30.0, 64.0, 23.0 ],
-					"text" : "adc~ 2 1 3"
+					"text" : "adc~ 1 2 3"
 				}
 
 			}
