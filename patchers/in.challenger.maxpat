@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 714.0, 130.0, 765.0, 866.0 ],
+		"rect" : [ 846.0, 124.0, 765.0, 866.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,73 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "",
+					"appearance" : 2,
+					"id" : "obj-33",
+					"maxclass" : "live.numbox",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 125.5, 661.5, 43.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 77.600000755999986, 173.0, 43.0, 15.0 ],
+					"prototypename" : "gain",
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ -28 ],
+							"parameter_initial_enable" : 1,
+							"parameter_linknames" : 1,
+							"parameter_longname" : "live.numbox",
+							"parameter_mmax" : 30.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "Gain",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.numbox"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Ableton Sans Bold",
+					"fontsize" : 9.5,
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 125.5, 631.5, 58.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.5, 171.5, 58.0, 18.0 ],
+					"text" : "target RMS"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 15.0, 660.0, 100.0, 23.0 ],
+					"text" : "in.auto-normalize"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 195.0, 630.0, 24.0, 24.0 ]
+					"patching_rect" : [ 345.0, 630.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -87,7 +147,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 35.0, 660.0, 115.0, 23.0 ],
+					"patching_rect" : [ 365.0, 675.0, 115.0, 23.0 ],
 					"text" : "adsr~ 1 100 0.5 400"
 				}
 
@@ -434,7 +494,7 @@
 				"box" : 				{
 					"comment" : "(1/0) did pitch match",
 					"id" : "obj-25",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -470,7 +530,7 @@
 				"box" : 				{
 					"comment" : "controls (pitch [f]; on; off; freeze [1/0])",
 					"id" : "obj-7",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -862,7 +922,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
-									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
@@ -1882,7 +1941,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 450.0, 15.0, 30.0, 30.0 ]
 								}
 
@@ -2267,7 +2326,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-71",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2279,11 +2338,11 @@
 				"box" : 				{
 					"comment" : "(signal) audio input",
 					"id" : "obj-70",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -2334,7 +2393,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 75.0, 420.0, 77.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 40.0, 167.0, 89.0, 18.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 120.0, 75.0, 52.0, 29.0 ],
 					"text" : "was pitch correct?"
 				}
 
@@ -2352,7 +2412,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 165.0, 420.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 165.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 124.0, 105.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2372,7 +2432,7 @@
 				"box" : 				{
 					"comment" : "pitch to match (0.-127.)",
 					"id" : "obj-4",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2461,7 +2521,7 @@
 				"box" : 				{
 					"comment" : "pitch (0.-127.)",
 					"id" : "obj-6",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2474,11 +2534,11 @@
 				"box" : 				{
 					"comment" : "envelope (0-127)",
 					"id" : "obj-5",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 135.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -2642,6 +2702,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 1 ],
+					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-35", 0 ]
 				}
@@ -2780,7 +2854,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-67", 0 ]
 				}
 
@@ -2832,6 +2906,82 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-11" : [ "live.text[3]", "live.text", 0 ],
+			"obj-23" : [ "live.gain~[4]", "freeze gain", 0 ],
+			"obj-33" : [ "live.numbox", "Gain", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "264.freeze~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/patchers",
+				"patcherrelativepath" : "../../264-tools/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.freeze-pfft~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/patchers",
+				"patcherrelativepath" : "../../264-tools/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.midi-learn.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/patchers",
+				"patcherrelativepath" : "../../264-tools/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.pattr-control.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/patchers",
+				"patcherrelativepath" : "../../264-tools/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "set-patch-path.js",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/javascript",
+				"patcherrelativepath" : "../../264-tools/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.resize.js",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/javascript",
+				"patcherrelativepath" : "../../264-tools/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.preset-toggle.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/patchers",
+				"patcherrelativepath" : "../../264-tools/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "264.ui-close.png",
+				"bootpath" : "~/Documents/Max 8/Packages/264-tools/media",
+				"patcherrelativepath" : "../../264-tools/media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "in.auto-normalize.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/irrelevant-noise/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Audiomix",
 				"default" : 				{
